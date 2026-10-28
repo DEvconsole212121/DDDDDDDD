@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bidisite-audit"
+version = "0.1.0"
+description = "Offline HTML checks for bilingual and RTL web accessibility"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["accessibility", "html", "rtl", "arabic", "french"]
+
+[project.scripts]
+bidisite-audit = "bidisite_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
